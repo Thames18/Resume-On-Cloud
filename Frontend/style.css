@@ -1,141 +1,145 @@
 /* General Styles */
 body {
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #FCFCFC;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3 {
-    font-weight: 600;
-    color: #111;
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0077b6, #00a6fb);
+    color: white;
+    padding: 30px 0;
+    border-radius: 0 0 20px 20px;
 }
 
 h1 {
-    font-size: 34px;
-    margin-bottom: 15px;
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
 }
 
-h2 {
-    font-size: 26px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #CCC;
-    display: inline-block;
-}
-
-/* Contact Section */
 .contact {
-    margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
-/* Project Section */
-.project {
-    margin-bottom: 40px;
-}
-
-.project-title {
-    font-size: 22px;
-    color: #222;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.project-title a {
-    color: #000;
+.contact a {
+    color: #ffdd57;
     text-decoration: none;
-    padding-left: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.project-title a:hover i {
+.contact a:hover {
+    color: #ffe599;
+}
+
+/* Main Content */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles with Icons */
+h2 {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Icons for Sections */
+h2:nth-of-type(1)::before { background-image: url("Projects.jpg"); }  /* Projects */
+h2:nth-of-type(2)::before { background-image: url("Experience.jpg"); } /* Experience */
+h2:nth-of-type(3)::before { background-image: url("Education.jpg"); }  /* Education */
+h2:nth-of-type(4)::before { background-image: url("Certifications.png"); } /* Certifications */
+
+/* Card Layout for Sections */
+.section-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0077b6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-card:hover {
+    transform: scale(1.02);
+}
+
+/* Job Role & Project Titles */
+.role, .project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #005f87;
+}
+
+/* Date/Duration */
+.duration {
+    font-size: 0.9em;
     color: #555;
+    margin-bottom: 10px;
 }
 
-.project-date {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
+/* Bullet Point Styling */
 .project-details {
-    padding-left: 25px;
-    list-style: none;
+    list-style: none; /* Remove default bullets */
+    padding: 0;
 }
 
 .project-details li {
+    display: flex;
+    align-items: center;
     margin-bottom: 12px;
-    position: relative;
+    font-size: 1em;
 }
 
-.project-details li::before {
-    content: "→";
-    position: absolute;
-    left: -25px;
-    color: #AAA;
-}
-
-/* Work Experience */
-.work-experience {
-    margin-bottom: 35px;
-}
-
-.role {
-    font-size: 22px;
-    color: #222;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.duration {
-    color: #777;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-/* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.skill-category {
-    margin-bottom: 20px;
-}
-
-.skill-category-title {
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
-    text-decoration: underline;
+.project-details li img {
+    width: 20px; /* Adjust bullet point image size */
+    height: 20px;
+    margin-right: 12px;
 }
 
 /* Footer */
-#footer {
-    font-size: 16px;
-    font-weight: normal;
-    color: #333;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-top: 2px solid #CCC;
-    display: inline-block;
-    padding-top: 15px;
-}
-
-/* Links */
-.links {
-    color: inherit;
-    text-decoration: none;
-}
-
-.links:hover {
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
     color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
 }
