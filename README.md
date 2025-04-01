@@ -2,7 +2,7 @@
 
 ## Overview
 
-Cloud Resume http://mustafalsalem.click/ is a dynamic, highly available personal resume website hosted on AWS. This project leverages a combination of AWS services, Terraform for Infrastructure as Code (IaC), and a fully automated CI/CD pipeline. It incorporates advanced monitoring, alerting, and logging mechanisms through CloudWatch, PagerDuty, Slack, and Jira, ensuring optimal performance and system reliability.
+<a href="http://mustafalsalem.click/" rel="nofollow">Cloud Resume</a> is a dynamic, highly available personal resume website hosted on AWS. This project leverages a combination of AWS services, Terraform for Infrastructure as Code (IaC), and a fully automated CI/CD pipeline. It incorporates advanced monitoring, alerting, and logging mechanisms through CloudWatch, PagerDuty, Slack, and Jira, ensuring optimal performance and system reliability.
 
 ## Features
 
