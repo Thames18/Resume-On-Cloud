@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-    fetch('https://8xit0s9q11.execute-api.ca-central-1.amazonaws.com/Counter/')
+    fetch('https://1fuvd4d8k4.execute-api.ca-central-1.amazonaws.com/prod/count')
     .then(response => response.json())
     .then(data => {
         let visitor_count = data.updated_total_count;
