@@ -29,20 +29,10 @@
     ├── main.tf
     ├── modules
     │   ├── back-end
-    │   │   ├── api.tf
     │   │   ├── db.tf
     │   │   ├── lambda.tf
-    │   │   ├── update_count.py
-    │   │   └── update_count_function.zip
     │   ├── front-end
-    │   │   ├── cf.tf
-    │   │   ├── dns.tf
     │   │   ├── s3.tf
-    │   │   └── variables.tf
-    │   └── monitoring
-    │       ├── main.tf
-    │       └── variables.tf
-    ├── providers.tf
 ```
 
 ### Explanation of Directories and Files
